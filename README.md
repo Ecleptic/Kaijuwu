@@ -7,4 +7,4 @@
     - Vanilla
 
 
-    [poll](http://www.strawpoll.me/14451852)
+    [Poll](http://www.strawpoll.me/14451852)
