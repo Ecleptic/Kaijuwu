@@ -1,6 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `KAIJUWU Heavy Industries`
   },
-  plugins: [`gatsby-plugin-react-helmet`],
+  plugins: [
+    `gatsby-plugin-react-helmet`, `gatsby-plugin-sass`
+  ],
+  pathPrefix: `/Kaijuwu`
 }
