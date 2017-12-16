@@ -80,53 +80,120 @@ ul {
     margin: 1rem auto;
   }
   ul {
+    list-style: none;
     margin: auto;
+    padding: 0;
     .playersListItem {
       align-items: center;
       align-content: center;
-      text-align: center;
-      padding: 1rem 1rem 1rem 1rem;
-      width: 40vw; // height: 6rem;
+      text-align: center; // padding: 1rem;
+      width: 320px; // height: 6rem;
       background: rgba(0, 0, 0, 0.5);
       flex-direction: column;
-      margin: 1rem;
-    }
-    .position {
-      text-align: start;
-      .positionText {
-        font-size: .7rem;
+      margin: 1rem auto;
+      &>* {
+        padding: 0 .3rem;
       }
-    }
-    .icons {
-      display: flex;
-      justify-content: space-between;
-      .heroes,
-      .social {
-        display: flex;
-        ul {
-          padding: 0;
-          margin: 0;
-          list-style: none;
-          display: flex;
-          justify-content: flex-start;
-          li {
-            text-align: center;
-            padding: .1rem;
-            margin: .1rem;
-            width: 1.3rem;
-            height: 1.3rem;
-          }
+      .position {
+        color: grey;
+        text-align: start;
+        .positionText {
+          font-size: .7rem;
         }
       }
-      .heroes {
-        // justify-content: flex-end;
+      .name {
+        text-align: start;
+        .numberText {
+          color: grey;
+        }
+      }
+      .icons {
+        display: flex;
+        justify-content: space-between;
+        padding: .3rem .1rem;
+        .heroes,
+        .social {
+          display: flex;
+          ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            justify-content: flex-start;
+            li {
+              text-align: center;
+              padding: .1rem;
+              margin: .1rem;
+              width: 1.3rem;
+              height: 1.3rem;
+            }
+          }
+        }
+        .heroes {
+          // justify-content: flex-end;
+        }
       }
     }
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 800px) {
+  .teamList{
+    ul{
+      .playersListItem{
+        // width:50vw;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
   html {
-    font-size: 100%;
+    font-size: 1.201rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .teamList {
+    padding: 0;
+    ul {
+      width: 100%;
+      padding: 0;
+      list-style-type: none;
+      .playersListItem {
+        padding: .3rem;
+        // width: 300px;
+      }
+    }
+  }
+}
+
+// I still want to get this better
+@each $hero in Ana,
+Bastion,
+Dva,
+Genji,
+Hanzo,
+Junkrat,
+Lucio,
+McCree,
+Mei,
+Mercy,
+Orisa,
+Pharah,
+Reaper,
+Reinhardt,
+Roadhog,
+Soldier_76,
+Sombra,
+Symmetra,
+Torbjorn,
+Tracer,
+Widowmaker,
+Winston,
+Zarya,
+Zenyatta {
+  .#{$hero} {
+    background: url(./assets/heroes/Spray_#{$hero}_Icon.png);
   }
 }

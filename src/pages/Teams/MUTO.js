@@ -1,90 +1,219 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const MUTO = () => (
-  <div className="teamList">
-    <h1>KAIJUWU MUTO</h1>
-    <ul>
-      <li className="playersListItem">
-        <div className="position">
-          <span className="positionText">Capitan</span>
-        </div>
-        <div className="name">
-          <span className="nameText">FernTendo#1992</span>
-        </div>
-        <div className="icons">
-          <div className="social">
-            <ul>
-              <li class="social_twitch">
-                <a href="https://www.twitch.tv">
-                  <img width="20" height="20" src={twitch} alt="twitch icon"/>
-                </a>
-              </li>
-              <li class="social_twitter">
-                <a href="https://www.twitter.tv">
-                  <img width="20" height="20" src={twitter} alt="twitter icon"/>
-                </a>
-              </li>
-              <li class="social_ytube">
-                <a href="https://www.youtube.tv">
-                  <img width="20" height="20" src={youtube} alt="youtube icon"/>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="heroes">
-            <ul>
-              <li>
-                <img width="20" height="20" src={TracerIcon}/>
-              </li>
-              <li>
-                <img width="20" height="20" src={Soldier_76Icon}/>
-              </li>
-              <li>
-                <img width="20" height="20" src={WidowmakerIcon}/>
-              </li>
-              <li>
-                <img width="20" height="20" src={McCreeIcon}/>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </li>
-      <li className="playersListItem">
-        <span className="position"></span>
-        <span className="name">Dan#16172</span>
-        <div className="social"></div>
-        <div className="heroes"></div>
-      </li>
-      <li className="playersListItem">
-        <span className="position"></span>
-        <span className="name">CrispDuwang#1820</span>
-        <div className="social"></div>
-        <div className="heroes"></div>
-      </li>
-      <li className="playersListItem">
-        <span className="position"></span>
-        <span className="name">Mykal#11265</span>
-        <div className="social"></div>
-        <div className="heroes"></div>
-      </li>
-      <li className="playersListItem">
-        <span className="position"></span>
-        <span className="name">Archimedes#12185</span>
-        <div className="social"></div>
-        <div className="heroes"></div>
-      </li>
-      <li className="playersListItem">
-        <span className="position"></span>
-        <span className="name">MatahuriTung#1199</span>
-        <div className="social"></div>
-        <div className="heroes"></div>
-      </li>
-    </ul>
-  </div>
-)
+const MUTO = props => {
+  const players = props.data.allMutoJson.edges
+
+  return (
+    <div className="teamList">
+      <h1>KAIJUWU MUTO</h1>
+      <ul>
+        {players.map((player, index) => {
+          return (
+            <li key={index} className="playersListItem">
+              <div className="position">
+                <span className="positionText">{player.node.position}</span>
+              </div>
+              <div className="name">
+                <span className="nameText">{player.node.username}</span>
+                <span className="numberText">{player.node.usernumber}</span>
+
+              </div>
+              <div className="icons">
+                <div className="social">
+                  <ul>
+                    <li className="social_twitch">
+                      <a href={player.node.social.twitch}>
+                        <img width="20" height="20" src={twitch} alt="twitch icon"/>
+                      </a>
+                    </li>
+                    <li className="social_twitter">
+                      <a href={player.node.social.twitter}>
+                        <img width="20" height="20" src={twitter} alt="twitter icon"/>
+                      </a>
+                    </li>
+                    <li className="social_ytube">
+                      <a href={player.node.social.youtube}>
+                        <img width="20" height="20" src={youtube} alt="youtube icon"/>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div className="heroes">
+                  <ul>
+                    {player
+                      .node
+                      .heroes
+                      .map((hero, index) => {
+                        return (
+                          <li key={index} className="heroItem">
+                            <img width="20" height="20" className={hero + 'heroImage'} src={getHeroImage(hero)}/>
+                          </li>
+                        )
+                      })}
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+          )
+        })
+}
+      </ul>
+    </div>
+  )
+}
 
 export default MUTO
+
+export const mutoQuery = graphql `
+query mutoQuery {
+  allMutoJson {
+    edges {
+      node {
+        position
+        username
+        usernumber
+        social{
+          twitch
+          twitter
+          youtube
+        }
+        heroes
+      }
+    }
+  }
+}
+`
+
+
+function getHeroImage(hero) {
+  switch (hero) {
+    case 'Ana':
+      {
+        return {AnaIcon}
+        break
+      }
+    case 'Bastion':
+      {
+
+        break
+      }
+    case 'Dva':
+      {
+
+        break
+      }
+    case 'Genji':
+      {
+
+        break
+      }
+    case 'Hanzo':
+      {
+
+        break
+      }
+    case 'Junkrat':
+      {
+
+        break
+      }
+    case 'Lucio':
+      {
+
+        break
+      }
+    case 'McCree':
+      {
+        return McCreeIcon
+        break
+      }
+    case 'Mei':
+      {
+
+        break
+      }
+    case 'Mercy':
+      {
+
+        break
+      }
+    case 'Orisa':
+      {
+
+        break
+      }
+    case 'Pharah':
+      {
+
+        break
+      }
+    case 'Reaper':
+      {
+
+        break
+      }
+    case 'Reinhardt':
+      {
+
+        break
+      }
+    case 'Roadhog':
+      {
+
+        break
+      }
+    case 'Soldier_76':
+      {
+        return Soldier_76Icon
+        break
+      }
+    case 'Sombra':
+      {
+
+        break
+      }
+    case 'Symmetra':
+      {
+
+        break
+      }
+    case 'Torbjorn':
+      {
+
+        break
+      }
+    case 'Tracer':
+      {
+        return TracerIcon
+        break
+      }
+    case 'Widowmaker':
+      {
+        return WidowmakerIcon
+        break
+      }
+    case 'Winston':
+      {
+
+        break
+      }
+    case 'Zarya':
+      {
+
+        break
+      }
+    case 'Zenyatta':
+      {
+
+        break
+      }
+
+    default:
+      break
+  }
+}
 
 import twitch from '../assets/icons/twitch.svg'
 import twitter from '../assets/icons/twitter.svg'

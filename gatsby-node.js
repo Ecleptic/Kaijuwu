@@ -1,7 +1,16 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+// exports.modifyWebpackConfig = (
+//     config,
+//     stage
+// ) => {
+//     const imageLoader = stage !== 'develop'
+//         ? 'file?name=[name]-[hash].[ext]'
+//         : 'file';
 
- // You can delete this file if you're not using it
+//     config.removeLoader('images');
+//     config.loader('images', {
+//         test: /\.(jpe?g|png|svg)(\?.*)?$/i,
+//         loader: imageLoader
+//     });
+
+//     return config;
+// };
