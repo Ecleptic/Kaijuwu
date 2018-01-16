@@ -2,8 +2,6 @@ import React from "react"
 import Link from "gatsby-link"
 
 const SGZA = props => {
-  console.log(props)
-  console.log(props.data)
   const players = props.data.allSgzaJson.edges
   const loading = props.data.loading
 
