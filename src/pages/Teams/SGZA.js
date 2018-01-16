@@ -96,7 +96,7 @@ export default SGZA
 
 export const sgzaQuery = graphql`
   query sgzaQuery {
-    allSgzaJson(limit: 4) {
+    allSgzaJson(limit: 5) {
       edges {
         node {
           position
