@@ -88,7 +88,7 @@ const TemplateWrapper = ({ children }) => (
 const Footer = () => (
   <div className="footer">
     <p>
-      Designed by <a style={{color:"#ffffff",textDecoration:"none"}} href="#">Tengu</a>, Created by <a style={{color:"#ffffff",textDecoration:"none"}} href="https://camerongreens.com">Ecleptic</a>
+      Designed by <a style={{color:"#ffffff",textDecoration:"none"}} href="http://seannorton.me/">Tengu</a>, Created by <a style={{color:"#ffffff",textDecoration:"none"}} href="https://camerongreens.com">Ecleptic</a>
     </p>
   </div>
 )
