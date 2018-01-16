@@ -169,6 +169,23 @@ ul {
   }
 }
 
+
+
+/**
+ * Footer Styles
+ */
+
+ .footer {
+  //  padding-top: 100px;
+  // height: 50px;
+  // margin-top: -50px;
+  flex: 1 0 auto;
+  font-size: .8rem;
+  text-align: center;
+}
+
+
+
 // I still want to get this better
 @each $hero in Ana,
 Bastion,

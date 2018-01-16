@@ -74,11 +74,22 @@ const TemplateWrapper = ({ children }) => (
         margin: "0 auto",
         maxWidth: 960,
         padding: "0px 1.0875rem 1.45rem",
-        paddingTop: 0
+        paddingTop: 0,
+        color:"#fff",
+        minHeight:"calc(100vh - 170px)"
       }}
     >
       {children()}
     </div>
+    <Footer />
+  </div>
+)
+
+const Footer = () => (
+  <div className="footer">
+    <p>
+      Designed by <a style={{color:"#ffffff",textDecoration:"none"}} href="#">Tengu</a>, Created by <a style={{color:"#ffffff",textDecoration:"none"}} href="https://camerongreens.com">Ecleptic</a>
+    </p>
   </div>
 )
 
