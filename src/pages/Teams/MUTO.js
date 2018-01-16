@@ -96,7 +96,7 @@ export default MUTO
 
 export const mutoQuery = graphql`
   query mutoQuery {
-    allMutoJson(limit: 1) {
+    allMutoJson {
       edges {
         node {
           position
@@ -105,7 +105,7 @@ export const mutoQuery = graphql`
           social {
             twitch
             twitter
-            youtube
+            # youtube
           }
           heroes
         }

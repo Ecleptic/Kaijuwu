@@ -2,6 +2,8 @@ import React from "react"
 import Link from "gatsby-link"
 
 const SGZA = props => {
+  console.log(props)
+  console.log(props.data)
   const players = props.data.allSgzaJson.edges
   const loading = props.data.loading
 
@@ -10,84 +12,84 @@ const SGZA = props => {
     <div className="teamList">
       <h1>KAIJUWU SGZA</h1>
       <ul>
-      {players.map((player, index) => {
-        return (
-          <li key={index} className="playersListItem">
-            <div className="position">
-              <span className="positionText">{player.node.position}</span>
-            </div>
-            <div className="name">
-              <span className="nameText">{player.node.username}</span>
-              <span className="numberText">{player.node.usernumber}</span>
-            </div>
-            <div className="icons">
-              <div className="social">
-                <ul>
-                  {player.node.social.twitch ? (
-                    <li className="social_twitch">
-                      <a href={player.node.social.twitch}>
-                        <img
-                          width="20"
-                          height="20"
-                          src={twitch}
-                          alt="twitch icon"
-                        />
-                      </a>
-                    </li>
-                  ) : (
-                    <li className="social_twitch" />
-                  )}
-                  {player.node.social.twitter ? (
-                    <li className="social_twitter">
-                      <a href={player.node.social.twitter}>
-                        <img
-                          width="20"
-                          height="20"
-                          src={twitter}
-                          alt="twitter icon"
-                        />
-                      </a>
-                    </li>
-                  ) : (
-                    <li className="social_twitter" />
-                  )}
-                  {player.node.social.youtube ? (
-                    <li className="social_ytube">
-                      <a href={player.node.social.youtube}>
-                        <img
-                          width="20"
-                          height="20"
-                          src={youtube}
-                          alt="youtube icon"
-                        />
-                      </a>
-                    </li>
-                  ) : (
-                    <li className="social_youtube" />
-                  )}
-                </ul>
+        {players.map((player, index) => {
+          return (
+            <li key={index} className="playersListItem">
+              <div className="position">
+                <span className="positionText">{player.node.position}</span>
               </div>
-              <div className="heroes">
-                <ul>
-                  {player.node.heroes.map((hero, index) => {
-                    return (
-                      <li key={index} className="heroItem">
-                        <img
-                          width="20"
-                          height="20"
-                          className={hero + "heroImage"}
-                          src={getHeroImage(hero)}
-                        />
+              <div className="name">
+                <span className="nameText">{player.node.username}</span>
+                <span className="numberText">{player.node.usernumber}</span>
+              </div>
+              <div className="icons">
+                <div className="social">
+                  <ul>
+                    {player.node.social.twitch ? (
+                      <li className="social_twitch">
+                        <a href={player.node.social.twitch}>
+                          <img
+                            width="20"
+                            height="20"
+                            src={twitch}
+                            alt="twitch icon"
+                          />
+                        </a>
                       </li>
-                    )
-                  })}
-                </ul>
+                    ) : (
+                      <li className="social_twitch" />
+                    )}
+                    {player.node.social.twitter ? (
+                      <li className="social_twitter">
+                        <a href={player.node.social.twitter}>
+                          <img
+                            width="20"
+                            height="20"
+                            src={twitter}
+                            alt="twitter icon"
+                          />
+                        </a>
+                      </li>
+                    ) : (
+                      <li className="social_twitter" />
+                    )}
+                    {player.node.social.youtube ? (
+                      <li className="social_ytube">
+                        <a href={player.node.social.youtube}>
+                          <img
+                            width="20"
+                            height="20"
+                            src={youtube}
+                            alt="youtube icon"
+                          />
+                        </a>
+                      </li>
+                    ) : (
+                      <li className="social_youtube" />
+                    )}
+                  </ul>
+                </div>
+                <div className="heroes">
+                  <ul>
+                    {player.node.heroes.map((hero, index) => {
+                      return (
+                        <li key={index} className="heroItem">
+                          <img
+                            width="20"
+                            height="20"
+                            className={hero + "heroImage"}
+                            src={getHeroImage(hero)}
+                          />
+                        </li>
+                      )
+                    })}
+                  </ul>
+                </div>
               </div>
-            </div>
-          </li>
-        )
-      })}
-    </ul>
+            </li>
+          )
+        })}
+      </ul>
     </div>
   )
 }
@@ -96,16 +98,16 @@ export default SGZA
 
 export const sgzaQuery = graphql`
   query sgzaQuery {
-    allSgzaJson(limit: 5) {
+    allSgzaJson {
       edges {
         node {
           position
           username
-          usernumber
+          # usernumber
           social {
             twitch
             twitter
-            youtube
+            # youtube
           }
           heroes
         }

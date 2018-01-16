@@ -96,7 +96,7 @@ export default Alumni
 
 export const alumniQuery = graphql`
   query alumniQuery {
-    allAlumniJson(limit:1) {
+    allAlumniJson {
       edges {
         node {
           position
@@ -105,7 +105,7 @@ export const alumniQuery = graphql`
           social {
             twitch
             twitter
-            youtube
+            # youtube
           }
           heroes
         }

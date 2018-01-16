@@ -1,11 +1,13 @@
-[{
-        "position": "Player",
-        "username": "Mykal",
-        "usernumber": "#11265",
-        "social": {
-            "twitch": "https://www.twitch.tv/mykaldraws",
-            "twitter": "https://www.twitter.com/GallegosMykal"
-        },
-        "heroes": ["Roadhog", "Ana", "Sombra", "Zenyatta"]
-    }
+[
+  {
+    "position": "Player",
+    "username": "Mykal",
+    "usernumber": "#11265",
+    "social": {
+      "twitch": "https://www.twitch.tv/mykaldraws",
+      "twitter": "https://www.twitter.com/GallegosMykal",
+      "youtube": null
+    },
+    "heroes": ["Roadhog", "Ana", "Sombra", "Zenyatta"]
+  }
 ]

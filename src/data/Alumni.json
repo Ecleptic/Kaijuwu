@@ -1,6 +1,13 @@
-[{
-        "username": "NA",
-        "social":{},
-        "heroes": []
-    }
+[
+  {
+    "position": "Bench",
+    "username": "Benene",
+    "usernumber": "123456",
+    "social": {
+      "twitch": "https://www.twitch.tv/benene_tv",
+      "twitter": "https://twitter.com/Benene_OW",
+      "youtube": null
+    },
+    "heroes": ["Dva", "Tracer", "Soldier_76"]
+  }
 ]

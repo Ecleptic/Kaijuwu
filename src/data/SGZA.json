@@ -2,41 +2,55 @@
   {
     "position": "Captain, Flex Support",
     "username": "Tengu",
+    "usernumber": null,
     "social": {
-      "twitch": "https://www.twitch.tv/10gu10gu10gu"
+      "twitch": "https://www.twitch.tv/10gu10gu10gu",
+      "twitter": null,
+      "youtube": null
     },
     "heroes": ["Zenyatta", "Ana", "Lucio", "Sombra"]
   },
   {
     "position": "Co-Captain",
     "username": "tentacles",
+    "usernumber": null,
     "social": {
-      "twitch": "https://www.twitch.tv/8tentacles"
+      "twitch": "https://www.twitch.tv/8tentacles",
+      "twitter": null,
+      "youtube": null
     },
     "heroes": ["Lucio", "Zarya", "Zenyatta", "Reinhardt"]
   },
   {
     "position": "Main Tank",
     "username": "TheOne616",
+    "usernumber": null,
     "social": {
-      "twitch": "https://www.twitch.tv/8tentacles"
+      "twitch": "https://www.twitch.tv/8tentacles",
+      "twitter": null,
+      "youtube": null
     },
     "heroes": ["Winston", "Reinhardt", "Dva", "Orisa"]
   },
   {
     "position": "DPS (hitscan)",
     "username": "DDP",
+    "usernumber": null,
     "social": {
-      "twitch": "https://www.twitch.tv/ddplive"
+      "twitch": "https://www.twitch.tv/ddplive",
+      "twitter": null,
+      "youtube": null
     },
     "heroes": ["McCree", "Soldier_76", "Tracer", "Widowmaker"]
   },
   {
     "position": "Bench",
     "username": "Benene",
+    "usernumber": null,
     "social": {
       "twitch": "https://www.twitch.tv/benene_tv",
-      "twitter":"https://twitter.com/Benene_OW"
+      "twitter": "https://twitter.com/Benene_OW",
+      "youtube": null
     },
     "heroes": ["Dva", "Tracer", "Soldier_76"]
   }
