@@ -9,6 +9,11 @@ const Teams = () => (
           <li>KAIJUWU MUTO</li>
         </h3>
       </Link>
+      <Link to="/Teams/MUTO/">
+        <h3>
+          <li>KAIJUWU SGZA</li>
+        </h3>
+      </Link>
       <Link to="/Teams/Alumni/">
         <h3>
           <li>KAIJUWU Alumni</li>
