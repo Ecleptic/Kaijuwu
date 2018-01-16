@@ -1,12 +1,11 @@
 [{
-        "position": "Capitan",
-        "username": "FernTendo",
-        "usernumber": "#1992",
+        "position": "Player",
+        "username": "Mykal",
+        "usernumber": "#11265",
         "social": {
-            "twitch": "https://www.twitch.tv",
-            "twitter": "https://www.twitter.com",
-            "youtube": "https://www.youtube.com"
+            "twitch": "https://www.twitch.tv/mykaldraws",
+            "twitter": "https://www.twitter.com/GallegosMykal"
         },
-        "heroes": ["Tracer", "Soldier_76", "Widowmaker", "McCree"]
+        "heroes": ["Roadhog", "Ana", "Sombra", "Zenyatta"]
     }
 ]

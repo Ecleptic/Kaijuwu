@@ -1,12 +1,34 @@
-[{
-        "position": "Capitan",
-        "username": "FernTendo",
-        "usernumber": "#1992",
-        "social": {
-            "twitch": "https://www.twitch.tv",
-            "twitter": "https://www.twitter.com",
-            "youtube": "https://www.youtube.com"
-        },
-        "heroes": ["Tracer", "Soldier_76", "Widowmaker", "McCree"]
-    }
+[
+  {
+    "position": "Captain, Flex Support",
+    "username": "Tengu",
+    "social": {
+      "twitch": "https://www.twitch.tv/10gu10gu10gu"
+    },
+    "heroes": ["Zenyatta", "Ana", "Lucio", "Sombra"]
+  },
+  {
+    "position": "Co-Captain",
+    "username": "tentacles",
+    "social": {
+      "twitch": "https://www.twitch.tv/8tentacles"
+    },
+    "heroes": ["Lucio", "Zarya", "Zenyatta", "Reinhardt"]
+  },
+  {
+    "position": "Main Tank",
+    "username": "TheOne616",
+    "social": {
+      "twitch": "https://www.twitch.tv/8tentacles"
+    },
+    "heroes": ["Winston", "Reinhardt", "Dva", "Orisa"]
+  },
+  {
+    "position": "DPS (hitscan)",
+    "username": "DDP",
+    "social": {
+      "twitch": "https://www.twitch.tv/ddplive"
+    },
+    "heroes": ["McCree", "Soldier_76", "Tracer", "Widowmaker"]
+  }
 ]

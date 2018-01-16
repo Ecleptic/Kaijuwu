@@ -9,7 +9,7 @@ const Teams = () => (
           <li>KAIJUWU MUTO</li>
         </h3>
       </Link>
-      <Link to="/Teams/MUTO/">
+      <Link to="/Teams/SGZA/">
         <h3>
           <li>KAIJUWU SGZA</li>
         </h3>
