@@ -104,37 +104,37 @@ function getHeroImage(hero) {
   switch (hero) {
     case 'Ana':
       {
-        return {AnaIcon}
+        return AnaIcon
         break
       }
     case 'Bastion':
       {
-
+        return Soldier_76Icon
         break
       }
     case 'Dva':
       {
-
+        return DvaIcon
         break
       }
     case 'Genji':
       {
-
+        return GenjiIcon
         break
       }
     case 'Hanzo':
       {
-
+        return HanzoIcon
         break
       }
     case 'Junkrat':
       {
-
+        return JunkratIcon
         break
       }
     case 'Lucio':
       {
-
+        return LucioIcon
         break
       }
     case 'McCree':
@@ -144,37 +144,37 @@ function getHeroImage(hero) {
       }
     case 'Mei':
       {
-
+        return MeiIcon
         break
       }
     case 'Mercy':
       {
-
+        return MercyIcon
         break
       }
     case 'Orisa':
       {
-
+        return OrisaIcon
         break
       }
     case 'Pharah':
       {
-
+        return PharahIcon
         break
       }
     case 'Reaper':
       {
-
+        return ReaperIcon
         break
       }
     case 'Reinhardt':
       {
-
+        return ReinhardtIcon
         break
       }
     case 'Roadhog':
       {
-
+        return RoadhogIcon
         break
       }
     case 'Soldier_76':
@@ -184,17 +184,17 @@ function getHeroImage(hero) {
       }
     case 'Sombra':
       {
-
+        return SombraIcon
         break
       }
     case 'Symmetra':
       {
-
+        return SymmetraIcon
         break
       }
     case 'Torbjorn':
       {
-
+        return TorbjornIcon
         break
       }
     case 'Tracer':
@@ -209,17 +209,17 @@ function getHeroImage(hero) {
       }
     case 'Winston':
       {
-
+        return WinstonIcon
         break
       }
     case 'Zarya':
       {
-
+        return ZaryaIcon
         break
       }
     case 'Zenyatta':
       {
-
+        return ZenyattaIcon
         break
       }
 
@@ -227,6 +227,7 @@ function getHeroImage(hero) {
       break
   }
 }
+
 
 import twitch from '../assets/icons/twitch.svg'
 import twitter from '../assets/icons/twitter.svg'
