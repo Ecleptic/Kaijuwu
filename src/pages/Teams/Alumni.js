@@ -23,17 +23,17 @@ const Alumni = props => {
                 <div className="social">
                   <ul>
                     <li className="social_twitch">
-                      <a href={player.node.twitch}>
+                      <a href={player.node.social.twitch}>
                         <img width="20" height="20" src={twitch} alt="twitch icon"/>
                       </a>
                     </li>
                     <li className="social_twitter">
-                      <a href={player.node.twitter}>
+                      <a href={player.node.social.twitter}>
                         <img width="20" height="20" src={twitter} alt="twitter icon"/>
                       </a>
                     </li>
                     <li className="social_ytube">
-                      <a href={player.node.twitter}>
+                      <a href={player.node.social.youtube}>
                         <img width="20" height="20" src={youtube} alt="youtube icon"/>
                       </a>
                     </li>
