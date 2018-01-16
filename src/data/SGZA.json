@@ -44,6 +44,17 @@
     "heroes": ["McCree", "Soldier_76", "Tracer", "Widowmaker"]
   },
   {
+    "position": "DPS (projectile)",
+    "username": "Afro",
+    "usernumber": "#12419",
+    "social": {
+      "twitch": "https://www.twitch.tv/theafroofdoom",
+      "twitter": null,
+      "youtube": null
+    },
+    "heroes": ["Genji", "Pharah", "Junkrat", "Hanzo"]
+  },
+  {
     "position": "Bench",
     "username": "Benene",
     "usernumber": null,
