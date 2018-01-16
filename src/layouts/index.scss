@@ -1,9 +1,11 @@
+
+
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-family: sans-serif;
+  font-family: Roboto, sans-serif !important;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   font: 112.5%/1.45em georgia, serif;
@@ -14,8 +16,10 @@ html {
 
 body {
   margin: 0;
-  background: darkblue;
-  background-image: url("./assets/genji.jpg");
+  background: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("./assets/bgposterdark.jpg");
 }
 
 a {
