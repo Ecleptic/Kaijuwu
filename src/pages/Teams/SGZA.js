@@ -156,6 +156,10 @@ function getHeroImage(hero) {
       return MercyIcon
       break
     }
+    case "Moira": {
+      return MoiraIcon
+      break
+    }
     case "Orisa": {
       return OrisaIcon
       break
@@ -242,6 +246,8 @@ import MeiIcon from "../assets/heroes/Spray_Mei_Icon.png"
 import MeiPixel from "../assets/heroes/Spray_Mei_Pixel.png"
 import MercyIcon from "../assets/heroes/Spray_Mercy_Icon.png"
 import MercyPixel from "../assets/heroes/Spray_Mercy_Pixel.png"
+import MoiraIcon from "../assets/heroes/Spray_Moira_Icon.png"
+import MoiraPixel from "../assets/heroes/Spray_Moira_Pixel.png"
 import OrisaIcon from "../assets/heroes/Spray_Orisa_Icon.png"
 import OrisaPixel from "../assets/heroes/Spray_Orisa_Pixel.png"
 import PharahIcon from "../assets/heroes/Spray_Pharah_Icon.png"

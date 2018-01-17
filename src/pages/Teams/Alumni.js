@@ -10,84 +10,84 @@ const Alumni = props => {
     <div className="teamList">
       <h1>KAIJUWU Alumni</h1>
       <ul>
-      {players.map((player, index) => {
-        return (
-          <li key={index} className="playersListItem">
-            <div className="position">
-              <span className="positionText">{player.node.position}</span>
-            </div>
-            <div className="name">
-              <span className="nameText">{player.node.username}</span>
-              <span className="numberText">{player.node.usernumber}</span>
-            </div>
-            <div className="icons">
-              <div className="social">
-                <ul>
-                  {player.node.social.twitch ? (
-                    <li className="social_twitch">
-                      <a href={player.node.social.twitch}>
-                        <img
-                          width="20"
-                          height="20"
-                          src={twitch}
-                          alt="twitch icon"
-                        />
-                      </a>
-                    </li>
-                  ) : (
-                    <li className="social_twitch" />
-                  )}
-                  {player.node.social.twitter ? (
-                    <li className="social_twitter">
-                      <a href={player.node.social.twitter}>
-                        <img
-                          width="20"
-                          height="20"
-                          src={twitter}
-                          alt="twitter icon"
-                        />
-                      </a>
-                    </li>
-                  ) : (
-                    <li className="social_twitter" />
-                  )}
-                  {player.node.social.youtube ? (
-                    <li className="social_ytube">
-                      <a href={player.node.social.youtube}>
-                        <img
-                          width="20"
-                          height="20"
-                          src={youtube}
-                          alt="youtube icon"
-                        />
-                      </a>
-                    </li>
-                  ) : (
-                    <li className="social_youtube" />
-                  )}
-                </ul>
+        {players.map((player, index) => {
+          return (
+            <li key={index} className="playersListItem">
+              <div className="position">
+                <span className="positionText">{player.node.position}</span>
               </div>
-              <div className="heroes">
-                <ul>
-                  {player.node.heroes.map((hero, index) => {
-                    return (
-                      <li key={index} className="heroItem">
-                        <img
-                          width="20"
-                          height="20"
-                          className={hero + "heroImage"}
-                          src={getHeroImage(hero)}
-                        />
+              <div className="name">
+                <span className="nameText">{player.node.username}</span>
+                <span className="numberText">{player.node.usernumber}</span>
+              </div>
+              <div className="icons">
+                <div className="social">
+                  <ul>
+                    {player.node.social.twitch ? (
+                      <li className="social_twitch">
+                        <a href={player.node.social.twitch}>
+                          <img
+                            width="20"
+                            height="20"
+                            src={twitch}
+                            alt="twitch icon"
+                          />
+                        </a>
                       </li>
-                    )
-                  })}
-                </ul>
+                    ) : (
+                      <li className="social_twitch" />
+                    )}
+                    {player.node.social.twitter ? (
+                      <li className="social_twitter">
+                        <a href={player.node.social.twitter}>
+                          <img
+                            width="20"
+                            height="20"
+                            src={twitter}
+                            alt="twitter icon"
+                          />
+                        </a>
+                      </li>
+                    ) : (
+                      <li className="social_twitter" />
+                    )}
+                    {player.node.social.youtube ? (
+                      <li className="social_ytube">
+                        <a href={player.node.social.youtube}>
+                          <img
+                            width="20"
+                            height="20"
+                            src={youtube}
+                            alt="youtube icon"
+                          />
+                        </a>
+                      </li>
+                    ) : (
+                      <li className="social_youtube" />
+                    )}
+                  </ul>
+                </div>
+                <div className="heroes">
+                  <ul>
+                    {player.node.heroes.map((hero, index) => {
+                      return (
+                        <li key={index} className="heroItem">
+                          <img
+                            width="20"
+                            height="20"
+                            className={hero + "heroImage"}
+                            src={getHeroImage(hero)}
+                          />
+                        </li>
+                      )
+                    })}
+                  </ul>
+                </div>
               </div>
-            </div>
-          </li>
-        )
-      })}
-    </ul>
+            </li>
+          )
+        })}
+      </ul>
     </div>
   )
 }
@@ -96,16 +96,14 @@ export default Alumni
 
 export const alumniQuery = graphql`
   query alumniQuery {
-    allAlumniJson {
+    allAlumniJson{
       edges {
         node {
           position
           username
           usernumber
-          social {
+          social{
             twitch
-            twitter
-            # youtube
           }
           heroes
         }
@@ -154,6 +152,10 @@ function getHeroImage(hero) {
     }
     case "Mercy": {
       return MercyIcon
+      break
+    }
+    case "Moira": {
+      return MoiraIcon
       break
     }
     case "Orisa": {
@@ -242,6 +244,8 @@ import MeiIcon from "../assets/heroes/Spray_Mei_Icon.png"
 import MeiPixel from "../assets/heroes/Spray_Mei_Pixel.png"
 import MercyIcon from "../assets/heroes/Spray_Mercy_Icon.png"
 import MercyPixel from "../assets/heroes/Spray_Mercy_Pixel.png"
+import MoiraIcon from "../assets/heroes/Spray_Moira_Icon.png"
+import MoiraPixel from "../assets/heroes/Spray_Moira_Pixel.png"
 import OrisaIcon from "../assets/heroes/Spray_Orisa_Icon.png"
 import OrisaPixel from "../assets/heroes/Spray_Orisa_Pixel.png"
 import PharahIcon from "../assets/heroes/Spray_Pharah_Icon.png"
