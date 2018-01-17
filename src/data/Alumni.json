@@ -1,13 +1,13 @@
 [
   {
-    "position": "Bench",
-    "username": "Benene",
-    "usernumber": "123456",
+    "position": "ॱ",
+    "username": "No ",
+    "usernumber": " Alumni",
     "social": {
-      "twitch": "https://www.twitch.tv/benene_tv",
-      "twitter": "https://twitter.com/Benene_OW",
+      "twitch": null,
+      "twitter": null,
       "youtube": null
     },
-    "heroes": ["Dva", "Tracer", "Soldier_76"]
+    "heroes": []
   }
 ]

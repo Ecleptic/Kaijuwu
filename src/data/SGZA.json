@@ -21,6 +21,7 @@
     },
     "heroes": ["Lucio", "Zarya", "Zenyatta", "Reinhardt"]
   },
+
   {
     "position": "Main Tank",
     "username": "TheOne616",
@@ -53,6 +54,17 @@
       "youtube": null
     },
     "heroes": ["Genji", "Pharah", "Junkrat", "Hanzo"]
+  },
+  {
+    "position": "Flex",
+    "username": "IOIOLXD",
+    "usernumber": "#1177",
+    "social": {
+      "twitch": null,
+      "twitter": null,
+      "youtube": null
+    },
+    "heroes": ["Dva", "Roadhog", "Genji", "Ana"]
   },
   {
     "position": "Bench",
