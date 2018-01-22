@@ -33,7 +33,7 @@ a:hover {
 ul {
   list-style: none;
 }
-h1{
+h1 {
   text-transform: uppercase;
 }
 
@@ -44,11 +44,15 @@ h1{
     margin-right: auto;
   }
   h4 {
-    padding: .5rem;
+    padding: 0.5rem;
     margin-top: 0;
     margin-bottom: 0;
+    text-transform: uppercase;
+
     a {
       color: #f2f2f2;
+      text-transform: uppercase;
+
       &:hover {
         color: rgba(255, 255, 255, 0.773);
       }
@@ -61,8 +65,9 @@ h1{
   flex-direction: column;
   h1 {
     margin: auto;
-    padding: .5rem;
+    padding: 0.5rem;
     color: #ffffff;
+    text-transform: uppercase;
   }
 }
 
@@ -90,22 +95,22 @@ h1{
     margin: auto;
     padding: 0;
     .playersListItem {
-      opacity: .65;
+      // opacity: .65;
       align-items: center;
       align-content: center;
       text-align: center; // padding: 1rem;
       width: 320px; // height: 6rem;
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.65);
       flex-direction: column;
       margin: 1rem auto;
-      &>* {
-        padding: 0 .3rem;
+      & > * {
+        padding: 0 0.3rem;
       }
       .position {
         color: grey;
         text-align: start;
         .positionText {
-          font-size: .7rem;
+          font-size: 0.7rem;
           color: #828282;
           font-style: italic;
         }
@@ -119,7 +124,7 @@ h1{
       .icons {
         display: flex;
         justify-content: space-between;
-        padding: .3rem .1rem;
+        padding: 0.3rem 0.1rem;
         .heroes,
         .social {
           display: flex;
@@ -131,31 +136,29 @@ h1{
             justify-content: flex-start;
             li {
               text-align: center;
-              padding: .1rem;
-              margin: .1rem;
+              padding: 0.1rem;
+              margin: 0.1rem;
               width: 1.3rem;
               height: 1.3rem;
             }
           }
         }
-        .heroes {
-          // justify-content: flex-end;
-        }
-        .social{
-          opacity: .75;
+        .social {
+          opacity: 0.75;
         }
       }
     }
   }
 }
+.aboutDiv {
+  padding-left: "5rem";
+  padding-right: "5rem";
+}
 
 @media only screen and (max-width: 800px) {
-  .teamList{
-    ul{
-      .playersListItem{
-        // width:50vw;
-      }
-    }
+  .aboutDiv {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
@@ -173,55 +176,51 @@ h1{
       padding: 0;
       list-style-type: none;
       .playersListItem {
-        padding: .3rem;
+        padding: 0.3rem;
         // width: 300px;
       }
     }
   }
 }
 
-
-
 /**
  * Footer Styles
  */
 
- .footer {
+.footer {
   //  padding-top: 100px;
   // height: 50px;
   // margin-top: -50px;
   flex: 1 0 auto;
-  font-size: .8rem;
+  font-size: 0.8rem;
   text-align: center;
 }
 
-
-
 // I still want to get this better
 @each $hero in Ana,
-Bastion,
-Dva,
-Genji,
-Hanzo,
-Junkrat,
-Lucio,
-McCree,
-Mei,
-Mercy,
-Orisa,
-Pharah,
-Reaper,
-Reinhardt,
-Roadhog,
-Soldier_76,
-Sombra,
-Symmetra,
-Torbjorn,
-Tracer,
-Widowmaker,
-Winston,
-Zarya,
-Zenyatta {
+  Bastion,
+  Dva,
+  Genji,
+  Hanzo,
+  Junkrat,
+  Lucio,
+  McCree,
+  Mei,
+  Mercy,
+  Orisa,
+  Pharah,
+  Reaper,
+  Reinhardt,
+  Roadhog,
+  Soldier_76,
+  Sombra,
+  Symmetra,
+  Torbjorn,
+  Tracer,
+  Widowmaker,
+  Winston,
+  Zarya,
+  Zenyatta {
   .#{$hero} {
     background: url(./assets/heroes/Spray_#{$hero}_Icon.png);
   }

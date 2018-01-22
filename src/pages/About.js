@@ -3,13 +3,13 @@ import Link from "gatsby-link"
 
 const AboutPage = () => (
   <div
+    className="aboutDiv"
     style={{
       display: "flex",
       flexDirection: "column",
       justifyContent: "center",
-      alignContent: "center",
+      alignContent: "center"
       // alignItems: "center",
-      padding: "1rem"
     }}
   >
     <h1
@@ -26,10 +26,12 @@ const AboutPage = () => (
     <p>
       Or something like that. KAIJUWU HEAVY INDUSTRIES is a group of invite-only
       casual/competitive teams (mainly playing Overwatch) that put an emphasis
-      on chemistry and community first. KHI aims to foster relational teams that
-      value each member for more than just their skills, and provide the tools
-      and assistance to help each team improve. We value positivity,
-      responsibility, and respectfulness.
+      on chemistry and community first.
+    </p>
+    <p>
+      KHI aims to foster relational teams that value each member for more than
+      just their skills, and provide the tools and assistance to help each team
+      improve. We value positivity, responsibility, and respectfulness.
     </p>
   </div>
 )
