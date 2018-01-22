@@ -18,6 +18,9 @@ const MUTO = props => {
               </div>
               <div className="name">
                 <span className="nameText">{player.node.username}</span>
+                {player.node.usernumber ? (
+                  <span className="numberHash">#</span>
+                ) : null}
                 <span className="numberText">{player.node.usernumber}</span>
               </div>
               <div className="icons">
