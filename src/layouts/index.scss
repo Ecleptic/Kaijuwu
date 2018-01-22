@@ -157,8 +157,8 @@ h1 {
 
 @media only screen and (max-width: 800px) {
   .aboutDiv {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
   .teamList {
     ul {
@@ -170,9 +170,6 @@ h1 {
 }
 
 @media only screen and (max-width: 370px) {
-  html {
-    font-size: 1.201rem;
-  }
   h1 {
     font-size: 1.5rem;
   }
@@ -183,6 +180,7 @@ h1 {
       padding: 0;
       list-style-type: none;
       .playersListItem {
+        font-size: 1rem;
         padding: 0.3rem;
         width: 200px; // height: 6rem;
         // width: 300px;
