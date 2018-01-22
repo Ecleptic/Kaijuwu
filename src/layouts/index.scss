@@ -160,17 +160,16 @@ h1 {
     padding-left: 2rem;
     padding-right: 2rem;
   }
-  .teamList{
-    ul{
-      .playersListItem{
+  .teamList {
+    ul {
+      .playersListItem {
         width: 320px; // height: 6rem;
-
       }
     }
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 370px) {
   html {
     font-size: 1.201rem;
   }
@@ -185,6 +184,7 @@ h1 {
       list-style-type: none;
       .playersListItem {
         padding: 0.3rem;
+        width: 200px; // height: 6rem;
         // width: 300px;
       }
     }
