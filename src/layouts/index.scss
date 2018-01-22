@@ -99,7 +99,7 @@ h1 {
       align-items: center;
       align-content: center;
       text-align: center; // padding: 1rem;
-      width: 320px; // height: 6rem;
+      width: 500px; // height: 6rem;
       background: rgba(0, 0, 0, 0.65);
       flex-direction: column;
       margin: 1rem auto;
@@ -159,6 +159,14 @@ h1 {
   .aboutDiv {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+  .teamList{
+    ul{
+      .playersListItem{
+        width: 320px; // height: 6rem;
+
+      }
+    }
   }
 }
 
