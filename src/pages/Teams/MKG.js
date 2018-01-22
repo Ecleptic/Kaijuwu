@@ -1,14 +1,14 @@
 import React from "react"
 import Link from "gatsby-link"
 
-const Alumni = props => {
-  const players = props.data.allAlumniJson.edges
+const MKG = props => {
+  const players = props.data.allMkgJson.edges
   const loading = props.data.loading
 
   if (loading) return null
   return (
     <div className="teamList">
-      <h1>KAIJUWU Alumni</h1>
+      <h1>KAIJUWU MKG</h1>
       <ul>
         {players.map((player, index) => {
           return (
@@ -92,20 +92,22 @@ const Alumni = props => {
   )
 }
 
-export default Alumni
+export default MKG
 
-export const alumniQuery = graphql`
-  query alumniQuery {
-    allAlumniJson{
+export const mkgQuery = graphql`
+  query mkgQuery {
+    allMkgJson {
       edges {
         node {
           position
           username
           usernumber
-          social{
+          social {
             twitch
+            twitter
+            # youtube
           }
-          # heroes
+          heroes
         }
       }
     }
