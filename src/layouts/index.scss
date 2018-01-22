@@ -1,5 +1,3 @@
-
-
 * {
   box-sizing: border-box;
 }
@@ -11,7 +9,7 @@ html {
   font: 112.5%/1.45em georgia, serif;
   box-sizing: border-box;
   overflow-y: scroll;
-  color: #ffffff
+  color: #f2f2f2;
 }
 
 body {
@@ -35,6 +33,9 @@ a:hover {
 ul {
   list-style: none;
 }
+h1{
+  text-transform: uppercase;
+}
 
 .header {
   display: flex;
@@ -47,7 +48,7 @@ ul {
     margin-top: 0;
     margin-bottom: 0;
     a {
-      color: #ffffff;
+      color: #f2f2f2;
       &:hover {
         color: rgba(255, 255, 255, 0.773);
       }
@@ -89,6 +90,7 @@ ul {
     margin: auto;
     padding: 0;
     .playersListItem {
+      opacity: .65;
       align-items: center;
       align-content: center;
       text-align: center; // padding: 1rem;
@@ -104,12 +106,14 @@ ul {
         text-align: start;
         .positionText {
           font-size: .7rem;
+          color: #828282;
+          font-style: italic;
         }
       }
       .name {
         text-align: start;
         .numberText {
-          color: grey;
+          color: #828282;
         }
       }
       .icons {
@@ -136,6 +140,9 @@ ul {
         }
         .heroes {
           // justify-content: flex-end;
+        }
+        .social{
+          opacity: .75;
         }
       }
     }

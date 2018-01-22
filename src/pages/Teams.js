@@ -14,9 +14,9 @@ const Teams = () => (
           <li>KAIJUWU SGZA</li>
         </h3>
       </Link>
-      <Link to="/Teams/Alumni/">
+      <Link to="/Teams/MKG/">
         <h3>
-          <li>KAIJUWU Alumni</li>
+          <li>KAIJUWU MKG</li>
         </h3>
       </Link>
     </ul>
