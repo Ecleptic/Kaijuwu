@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Link from "gatsby-link"
 import Helmet from "react-helmet"
-
+import icon from "../pages/assets/icons/MKG_ICON.png";
 import "./index.scss"
 
 const Header = () => (
@@ -26,8 +26,8 @@ const Header = () => (
             textDecoration: "none"
           }}
         >
-          Home
-        </Link>
+      <img className="headerIconImg" src={icon} alt="Team Icon" />
+      </Link>
       </h4>
       <h4 style={{}}>
         <Link
