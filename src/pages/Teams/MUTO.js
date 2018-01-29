@@ -76,8 +76,8 @@ const MUTO = props => {
                       return (
                         <li key={index} className="heroItem">
                           <img
-                            width="20"
-                            height="20"
+                            width="30"
+                            height="30"
                             className={hero + "heroImage"}
                             src={getHeroImage(hero)}
                           />

@@ -21,6 +21,18 @@
     "heroes": ["Hanzo", "Dva", "Zarya", "Soldier_76"]
   },
   {
+    "position": "Support",
+    "username": "Archimedes",
+    "usernumber": "12185",
+    "social": {
+      "twitch": "https://www.twitch.tv/archimedes2701",
+      "twitter": "https://www.twitter.com/archimedes2701",
+      "youtube": "https://www.youtube.com/channel/UCs2aOatuqr0SeIvZhTLhoIA",
+      "instagram": ["@are.ana", "@arkmdz"]
+    },
+    "heroes": ["Mercy", "Junkrat", "Moira", "Zenyatta"]
+  },
+  {
     "position": "Player",
     "username": "Mykal",
     "usernumber": "11265",
@@ -41,17 +53,5 @@
       "youtube": null
     },
     "heroes": ["McCree", "Soldier_76", "Reaper", "Ana"]
-  },
-  {
-    "position": "Support",
-    "username": "Archimedes",
-    "usernumber": "12185",
-    "social": {
-      "twitch": "https://www.twitch.tv/archimedes2701",
-      "twitter": "https://www.twitter.com/archimedes2701",
-      "youtube": "https://www.youtube.com/channel/UCs2aOatuqr0SeIvZhTLhoIA",
-      "instagram": ["@are.ana", "@arkmdz"]
-    },
-    "heroes": ["Mercy", "Junkrat", "Moira", "Zenyatta"]
   }
 ]

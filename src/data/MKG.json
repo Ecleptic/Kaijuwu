@@ -1,100 +1,102 @@
-[{
-        "position": "CAPTAIN / FLEX SUPPORT",
-        "username": "tengu",
-        "usernumber": "",
-        "social": {
-            "twitch": "",
-            "twitter": "",
-            "youtube": ""
-        },
-        "heroes": ["Zenyatta", "Ana", "Lucio", "Sombra"]
+[
+  {
+    "position": "CAPTAIN / FLEX SUPPORT",
+    "username": "tengu",
+    "usernumber": "",
+    "social": {
+      "twitch": "",
+      "twitter": "",
+      "youtube": ""
     },
-    {
-        "position": "CO-CAPTAIN / DPS FLEX",
-        "username": "seoulkiM",
-        "usernumber": "",
-        "social": {
-            "twitch": "",
-            "twitter": "",
-            "youtube": ""
-        },
-        "heroes": ["Pharah", "Soldier_76", "Lucio", "Ana"]
+    "heroes": ["Zenyatta", "Ana", "Lucio", "Sombra"]
+  },
+  {
+    "position": "CO-CAPTAIN / DPS FLEX",
+    "username": "seoulkiM",
+    "usernumber": "",
+    "social": {
+      "twitch": "",
+      "twitter": "",
+      "youtube": ""
     },
-    {
-        "position": "DPS FLEX",
-        "username": "Slash",
-        "usernumber": "",
-        "social": {
-            "twitch": "",
-            "twitter": "",
-            "youtube": ""
-        },
-        "heroes": ["Tracer", "Widowmaker", "McCree", "Zarya"]
+    "heroes": ["Pharah", "Soldier_76", "Lucio", "Ana"]
+  },
+  {
+    "position": "SUPPORT",
+    "username": "SleepyKitten",
+    "usernumber": "",
+    "social": {
+      "twitch": "",
+      "twitter": "",
+      "youtube": ""
     },
-    {
-        "position": "SUPPORT",
-        "username": "SleepyKitten",
-        "usernumber": "",
-        "social": {
-            "twitch": "",
-            "twitter": "",
-            "youtube": ""
-        },
-        "heroes": ["Mercy"]
+    "heroes": ["Mercy"]
+  },
+  {
+    "position": "DPS FLEX",
+    "username": "Slash",
+    "usernumber": "",
+    "social": {
+      "twitch": "",
+      "twitter": "",
+      "youtube": ""
     },
-    {
-        "position": "DPS",
-        "username": "Tsygama",
-        "usernumber": "",
-        "social": {
-            "twitch": "",
-            "twitter": "",
-            "youtube": ""
-        },
-        "heroes": ["Genji", "Dva", "Roadhog"]
+    "heroes": ["Tracer", "Widowmaker", "McCree", "Zarya"]
+  },
+
+  {
+    "position": "DPS",
+    "username": "Tsygama",
+    "usernumber": "",
+    "social": {
+      "twitch": "",
+      "twitter": "",
+      "youtube": ""
     },
-    {
-        "position": "TANK",
-        "username": "ImpishNoodle",
-        "usernumber": "",
-        "social": {
-            "twitch": "",
-            "twitter": "",
-            "youtube": ""
-        },
-        "heroes": ["Winston", "Reinhardt", "Dva"]
+    "heroes": ["Genji", "Dva", "Roadhog"]
+  },
+  {
+    "position": "DPS",
+    "username": "IWasDerp",
+    "usernumber": "",
+    "social": {
+      "twitch": "",
+      "twitter": "",
+      "youtube": ""
     },
-    {
-        "position": "TANK / SUPPORT FLEX",
-        "username": "tentacles",
-        "usernumber": "",
-        "social": {
-            "twitch": "",
-            "twitter": "",
-            "youtube": ""
-        },
-        "heroes": ["Winston", "Reinhardt", "Dva", "Lucio"]
+    "heroes": ["Soldier_76", "Tracer", "Widowmaker", "McCree"]
+  },
+  {
+    "position": "DPS",
+    "username": "DDP",
+    "usernumber": "",
+    "social": {
+      "twitch": "",
+      "twitter": "",
+      "youtube": ""
     },
-    {
-        "position": "DPS",
-        "username": "IWasDerp",
-        "usernumber": "",
-        "social": {
-            "twitch": "",
-            "twitter": "",
-            "youtube": ""
-        },
-        "heroes": ["Soldier_76", "Tracer", "Widowmaker", "McCree"]
+    "heroes": ["Genji", "Pharah", "Soldier_76", "Tracer"]
+  },
+  {
+    "position": "TANK",
+    "username": "ImpishNoodle",
+    "usernumber": "",
+    "social": {
+      "twitch": "",
+      "twitter": "",
+      "youtube": ""
     },
-    {
-        "position": "DPS",
-        "username": "DDP",
-        "usernumber": "",
-        "social": {
-            "twitch": "",
-            "twitter": "",
-            "youtube": ""
-        },
-        "heroes": ["Genji", "Pharah", "Soldier_76", "Tracer"]
-    }
+    "heroes": ["Winston", "Reinhardt", "Dva"]
+  },
+  {
+    "position": "TANK / SUPPORT FLEX",
+    "username": "tentacles",
+    "usernumber": "",
+    "social": {
+      "twitch": "",
+      "twitter": "",
+      "youtube": ""
+    },
+    "heroes": ["Winston", "Reinhardt", "Dva", "Lucio"]
+  }
 ]

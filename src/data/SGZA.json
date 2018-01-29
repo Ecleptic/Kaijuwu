@@ -1,7 +1,7 @@
 [
   {
     "position": "Captain, Flex Support",
-    "username": "Tengu",
+    "username": "tengu",
     "usernumber": null,
     "social": {
       "twitch": "https://www.twitch.tv/10gu10gu10gu",
@@ -20,18 +20,6 @@
       "youtube": null
     },
     "heroes": ["Lucio", "Zarya", "Zenyatta", "Reinhardt"]
-  },
-
-  {
-    "position": "Main Tank",
-    "username": "TheOne616",
-    "usernumber": null,
-    "social": {
-      "twitch": "https://www.twitch.tv/8tentacles",
-      "twitter": null,
-      "youtube": null
-    },
-    "heroes": ["Winston", "Reinhardt", "Dva", "Orisa"]
   },
   {
     "position": "DPS (hitscan)",
@@ -56,6 +44,18 @@
     "heroes": ["Genji", "Pharah", "Junkrat", "Hanzo"]
   },
   {
+    "position": "Main Tank",
+    "username": "TheOne616",
+    "usernumber": null,
+    "social": {
+      "twitch": "https://www.twitch.tv/8tentacles",
+      "twitter": null,
+      "youtube": null
+    },
+    "heroes": ["Winston", "Reinhardt", "Dva", "Orisa"]
+  },
+
+  {
     "position": "Flex",
     "username": "IOIOLXD",
     "usernumber": "1177",
@@ -67,7 +67,7 @@
     "heroes": ["Dva", "Roadhog", "Genji", "Ana"]
   },
   {
-    "position": "Bench",
+    "position": "flex",
     "username": "Benene",
     "usernumber": null,
     "social": {

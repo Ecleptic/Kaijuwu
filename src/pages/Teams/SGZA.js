@@ -14,7 +14,7 @@ const SGZA = props => {
           return (
             <li key={index} className="playersListItem">
               <div className="position">
-                <span className="positionText">{player.node.position}</span>
+                <span className="positionText">{(player.node.position).toUpperCase()}</span>
               </div>
               <div className="name">
                 <span className="nameText">{player.node.username}</span>
@@ -76,8 +76,8 @@ const SGZA = props => {
                       return (
                         <li key={index} className="heroItem">
                           <img
-                            width="20"
-                            height="20"
+                            width="30"
+                            height="30"
                             className={hero + "heroImage"}
                             src={getHeroImage(hero)}
                           />
