@@ -68,7 +68,7 @@ h1 {
       text-transform: uppercase;
       text-decoration: none;
       &:hover {
-        color: rgba(255, 255, 255, 0.773);
+        // color: rgba(255, 255, 255, 0.773);
         text-decoration: underline;
       }
     }
@@ -96,6 +96,7 @@ h1 {
       text-decoration: none;
       color: white;
       &:hover {
+        // color: rgba(255, 255, 255, 0.773);
         text-decoration: underline;
       }
     }
