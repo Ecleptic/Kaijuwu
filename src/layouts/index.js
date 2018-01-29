@@ -1,9 +1,9 @@
-import React from "react"
-import PropTypes from "prop-types"
-import Link from "gatsby-link"
-import Helmet from "react-helmet"
+import React from "react";
+import PropTypes from "prop-types";
+import Link from "gatsby-link";
+import Helmet from "react-helmet";
 import icon from "../pages/assets/icons/MKG_ICON.png";
-import "./index.scss"
+import "./index.scss";
 
 const Header = () => (
   <div
@@ -22,36 +22,29 @@ const Header = () => (
       <h4 className="headerIcon" style={{}}>
         <Link
           to="/"
-          style={{
-            textDecoration: "none"
-          }}
         >
-      <img className="headerIconImg" src={icon} alt="Team Icon" />
-      </Link>
-      </h4>
-      <h4 style={{}}>
-        <Link
-          to="/About/"
-          style={{
-            textDecoration: "none"
-          }}
-        >
-          About
+          <img className="headerIconImg" src={icon} alt="Team Icon" />
         </Link>
       </h4>
-      <h4 style={{}}>
-        <Link
-          to="/Teams/"
-          style={{
-            textDecoration: "none"
-          }}
-        >
-          Teams
-        </Link>
-      </h4>
+      <div className="headerNavItems" >
+        <h4 style={{}}>
+          <Link
+            to="/About/"
+          >
+            About
+          </Link>
+        </h4>
+        <h4 style={{}}>
+          <Link
+            to="/Teams/"
+          >
+            Teams
+          </Link>
+        </h4>
+      </div>
     </div>
   </div>
-)
+);
 
 const TemplateWrapper = ({ children }) => (
   <div>
@@ -75,26 +68,38 @@ const TemplateWrapper = ({ children }) => (
         maxWidth: 960,
         padding: "0px 1.0875rem 1.45rem",
         paddingTop: 0,
-        color:"#fff",
-        minHeight:"calc(100vh - 170px)"
+        color: "#fff",
+        minHeight: "calc(100vh - 170px)"
       }}
     >
       {children()}
     </div>
     <Footer />
   </div>
-)
+);
 
 const Footer = () => (
   <div className="footer">
     <p>
-      Designed by <a style={{color:"#ffffff",textDecoration:"none"}} href="http://seannorton.me/">Tengu</a>, Created by <a style={{color:"#ffffff",textDecoration:"none"}} href="https://camerongreens.com">Ecleptic</a>
+      Designed by{" "}
+      <a
+        style={{ color: "#ffffff", textDecoration: "none" }}
+        href="http://seannorton.me/"
+      >
+        Tengu
+      </a>, Created by{" "}
+      <a
+        style={{ color: "#ffffff", textDecoration: "none" }}
+        href="https://camerongreens.com"
+      >
+        Ecleptic
+      </a>
     </p>
   </div>
-)
+);
 
 TemplateWrapper.propTypes = {
   children: PropTypes.func
-}
+};
 
-export default TemplateWrapper
+export default TemplateWrapper;
