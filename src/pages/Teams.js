@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 const Teams = () => (
-  <div className="teamsPage">
+  <div className="teamsPage textShadow">
     <ul>
       <Link to="/Teams/SGZA/">
         <h3>

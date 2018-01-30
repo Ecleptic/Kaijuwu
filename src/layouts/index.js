@@ -12,7 +12,7 @@ const Header = () => (
     }}
   >
     <div
-      className="header"
+      className="header textShadow"
       style={{
         margin: "0 auto",
         maxWidth: 960,

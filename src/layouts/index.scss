@@ -50,7 +50,7 @@ h1 {
     height: 75px;
     border-radius: 50%;
     &:hover {
-      box-shadow: 0 0 30px  #828282;
+      box-shadow: 0 0 30px #828282;
     }
   }
   .headerNavItems {
@@ -176,8 +176,21 @@ h1 {
   }
 }
 .aboutDiv {
-  padding-left: "5rem";
-  padding-right: "5rem";
+  margin-left: "5rem";
+  margin-right: "5rem";
+
+  .aboutDiv_info {
+    // padding-right: 2rem;
+    // padding-left: 2rem;
+    padding: 2rem;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.65);
+  }
+}
+
+.textShadow {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000;
 }
 
 @media only screen and (max-width: 800px) {

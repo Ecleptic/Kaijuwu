@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 
 const IndexPage = () => (
   <div>
-    <div className="pageTitle">
+    <div className="pageTitle textShadow">
       <h1>KAIJUWU</h1>
       <h1>Heavy</h1>
       <h1>Industries</h1>
