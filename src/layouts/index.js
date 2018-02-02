@@ -27,14 +27,14 @@ const Header = () => (
         </Link>
       </h4>
       <div className="headerNavItems" >
-        <h4 style={{}}>
+        {/* <h4 style={{}}>
           <Link
             to="/About/"
           >
             About
           </Link>
-        </h4>
-        <h4 style={{}}>
+        </h4> */}
+        <h4 style={{fontSize: "1.5rem"}}>
           <Link
             to="/Teams/"
           >

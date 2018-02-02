@@ -10,7 +10,22 @@ const MKG = props => {
   return (
     <div className="teamList">
       <img className="logoImg" src={icon} alt="Team Icon" />
-      <h1>KAIJUWU MKG</h1>
+      <div className="teamInfo">
+        <h1>KAIJUWU MKG</h1>
+        <p>3.9k Team</p>
+        <p>
+          <a href="http://owuls2na.challonge.com/s2d3">
+            OWUL Season 2 Div 3 Winners
+          </a>
+        </p>
+        <p>
+          <a href="http://challonge.com/core_ow">
+            3rd Place CORE OW League Season 0
+          </a>
+        </p>
+        <p>Participated in Haste Overwatch PC Tournament Series</p>
+        <p>Participated in Overwatch Contenders Season Zero</p>
+      </div>
       <ul>
         {players.map((player, index) => {
           return (
@@ -93,6 +108,9 @@ const MKG = props => {
           );
         })}
       </ul>
+      <a href="#" className="toTopButton">
+        <p>Back To Top</p>
+      </a>
     </div>
   );
 };

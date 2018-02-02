@@ -33,6 +33,7 @@ a:hover {
 ul {
   list-style: none;
 }
+
 h1 {
   text-transform: uppercase;
 }
@@ -41,7 +42,6 @@ h1 {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-
   .headerIcon {
     margin-right: auto;
   }
@@ -62,7 +62,6 @@ h1 {
     margin-top: 0;
     margin-bottom: 0;
     text-transform: uppercase;
-
     a {
       color: #f2f2f2;
       text-transform: uppercase;
@@ -92,6 +91,7 @@ h1 {
   ul {
     margin: auto;
     padding: 1rem;
+    text-align: center;
     a {
       text-decoration: none;
       color: white;
@@ -114,6 +114,16 @@ h1 {
     width: 200px;
     height: 200px;
   }
+  .teamInfo {
+    text-align: center;
+    a {
+      color: white;
+      &:hover {
+        color: rgba(255, 255, 255, 0.773);
+        text-decoration: underline;
+      }
+    }
+  }
   ul {
     list-style: none;
     margin: auto;
@@ -127,7 +137,7 @@ h1 {
       background: rgba(0, 0, 0, 0.65);
       flex-direction: column;
       margin: 1rem auto;
-      & > * {
+      &>* {
         padding: 0 0.3rem;
       }
       .position {
@@ -141,8 +151,15 @@ h1 {
       }
       .name {
         text-align: start;
-        .numberHash {
+        .numberHash,
+        .numberText {
           color: #828282;
+        }
+        .nameText,
+        .numberHash,
+        .numberText {
+          font-family: ROBOTO Black, sans-serif; // font-size: 1.3rem;
+          font-size: 2.5rem; //45px/45pt.
         }
       }
       .icons {
@@ -174,11 +191,20 @@ h1 {
       }
     }
   }
+  .toTopButton {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    &:hover {
+      // color: rgba(255, 255, 255, 0.773);
+      text-decoration: underline;
+    }
+  }
 }
+
 .aboutDiv {
   margin-left: "5rem";
   margin-right: "5rem";
-
   .aboutDiv_info {
     // padding-right: 2rem;
     // padding-left: 2rem;
@@ -189,19 +215,21 @@ h1 {
 }
 
 .textShadow {
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-      1px 1px 0 #000;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 @media only screen and (max-width: 800px) {
-  .aboutDiv {
-    padding-left: 1.45rem;
-    padding-right: 1.45rem;
-  }
+  // .aboutDiv {
+  //   padding-left: 1.45rem;
+  //   padding-right: 1.45rem;
+  // }
   .teamList {
     ul {
       .playersListItem {
         width: 320px; // height: 6rem;
+        .name>.nameText {
+          font-size: 1.3rem;
+        }
       }
     }
   }
@@ -242,29 +270,29 @@ h1 {
 
 // I still want to get this better
 @each $hero in Ana,
-  Bastion,
-  Dva,
-  Genji,
-  Hanzo,
-  Junkrat,
-  Lucio,
-  McCree,
-  Mei,
-  Mercy,
-  Orisa,
-  Pharah,
-  Reaper,
-  Reinhardt,
-  Roadhog,
-  Soldier_76,
-  Sombra,
-  Symmetra,
-  Torbjorn,
-  Tracer,
-  Widowmaker,
-  Winston,
-  Zarya,
-  Zenyatta {
+Bastion,
+Dva,
+Genji,
+Hanzo,
+Junkrat,
+Lucio,
+McCree,
+Mei,
+Mercy,
+Orisa,
+Pharah,
+Reaper,
+Reinhardt,
+Roadhog,
+Soldier_76,
+Sombra,
+Symmetra,
+Torbjorn,
+Tracer,
+Widowmaker,
+Winston,
+Zarya,
+Zenyatta {
   .#{$hero} {
     background: url(./assets/heroes/Spray_#{$hero}_Icon.png);
   }

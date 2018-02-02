@@ -10,7 +10,20 @@ const MUTO = props => {
   return (
     <div className="teamList">
       <img className="logoImg" src={icon} alt="Team Icon" />
-      <h1>KAIJUWU MUTO</h1>
+      <div className="teamInfo">
+        <h1>KAIJUWU MUTO</h1>
+        <p>3.2k Team</p>
+        <p>
+          <a href="http://owuls2na.challonge.com/s2d11">
+            OWUL Season 2 Div 11 2nd Place
+          </a>
+        </p>
+        <p>
+          <a href="https://www.ugcleague.com/rankings_ow_season5.cfm#208">
+            11th Place UGC OW Season 5 Steel League
+          </a>
+        </p>
+      </div>
       <ul>
         {players.map((player, index) => {
           return (
@@ -93,6 +106,9 @@ const MUTO = props => {
           );
         })}
       </ul>
+      <a href="#" className="toTopButton">
+        <p>Back To Top</p>
+      </a>
     </div>
   );
 };

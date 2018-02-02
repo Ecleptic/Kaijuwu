@@ -10,7 +10,11 @@ const SGZA = props => {
   return (
     <div className="teamList">
       <img className="logoImg" src={icon} alt="Team Icon" />
-      <h1>KAIJUWU SGZA</h1>
+      <div className="teamInfo">
+        <h1>KAIJUWU SGZA</h1>
+        <p>4.2k Team</p>
+        <p>Currently Participating in UGC OW Season 6 Gold League</p>
+      </div>
       <ul>
         {players.map((player, index) => {
           return (
@@ -95,6 +99,9 @@ const SGZA = props => {
           );
         })}
       </ul>
+      <a href="#" className="toTopButton">
+        <p>Back To Top</p>
+      </a>
     </div>
   );
 };
