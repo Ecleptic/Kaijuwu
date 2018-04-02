@@ -14,12 +14,12 @@ const MUTO = props => {
         <h1>KAIJUWU MUTO</h1>
         <p>3.2k Team</p>
         <p>
-          <a href="http://owuls2na.challonge.com/s2d11">
+          <a target="_blank"href="http://owuls2na.challonge.com/s2d11">
             OWUL Season 2 Div 11 2nd Place
           </a>
         </p>
         <p>
-          <a href="https://www.ugcleague.com/rankings_ow_season5.cfm#208">
+          <a target="_blank"href="https://www.ugcleague.com/rankings_ow_season5.cfm#238">
             11th Place UGC OW Season 5 Steel League
           </a>
         </p>
@@ -43,10 +43,10 @@ const MUTO = props => {
                   <ul>
                     {player.node.social.twitch ? (
                       <li className="social_twitch">
-                        <a href={player.node.social.twitch}>
+                        <a target="_blank"href={player.node.social.twitch}>
                           <img
-                            width="20"
-                            height="20"
+                            width="23"
+                            height="23"
                             src={twitch}
                             alt="twitch icon"
                           />
@@ -57,10 +57,10 @@ const MUTO = props => {
                     )}
                     {player.node.social.twitter ? (
                       <li className="social_twitter">
-                        <a href={player.node.social.twitter}>
+                        <a target="_blank"href={player.node.social.twitter}>
                           <img
-                            width="20"
-                            height="20"
+                            width="23"
+                            height="23"
                             src={twitter}
                             alt="twitter icon"
                           />
@@ -71,10 +71,10 @@ const MUTO = props => {
                     )}
                     {player.node.social.youtube ? (
                       <li className="social_ytube">
-                        <a href={player.node.social.youtube}>
+                        <a target="_blank"href={player.node.social.youtube}>
                           <img
-                            width="20"
-                            height="20"
+                            width="23"
+                            height="23"
                             src={youtube}
                             alt="youtube icon"
                           />
@@ -106,7 +106,7 @@ const MUTO = props => {
           );
         })}
       </ul>
-      <a href="#" className="toTopButton">
+      <a target="_blank"href="#" className="toTopButton">
         <p>Back To Top</p>
       </a>
     </div>

@@ -1,26 +1,35 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from "react";
+import Link from "gatsby-link";
+import SGZA_icon from "./assets/icons/SGZA_ICON.png";
+import MUTO_icon from "./assets/icons/MUTO_ICON.png";
+import MKG_icon from "./assets/icons/MKG_ICON.png";
 
 const Teams = () => (
   <div className="teamsPage textShadow">
     <ul>
       <Link to="/Teams/SGZA/">
-        <h3>
-          <li>KAIJUWU SGZA</li>
-        </h3>
+        <img className="logoImg" src={SGZA_icon} alt="Team Icon" />
+        <div className="teamInfo">
+          <h1>KAIJUWU MKG</h1>
+          <p>3.9k Team</p>
+        </div>
       </Link>
       <Link to="/Teams/MUTO/">
-        <h3>
-          <li>KAIJUWU MUTO</li>
-        </h3>
+        <img className="logoImg" src={MUTO_icon} alt="Team Icon" />
+        <div className="teamInfo">
+          <h1>KAIJUWU MUTO</h1>
+          <p>3.2k Team</p>
+        </div>
       </Link>
       <Link to="/Teams/MKG/">
-        <h3>
-          <li>KAIJUWU MKG</li>
-        </h3>
+        <img className="logoImg" src={MKG_icon} alt="Team Icon" />
+        <div className="teamInfo">
+          <h1>KAIJUWU SGZA</h1>
+          <p>4.2k Team</p>
+        </div>
       </Link>
     </ul>
   </div>
-)
+);
 
-export default Teams
+export default Teams;

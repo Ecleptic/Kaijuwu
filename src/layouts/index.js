@@ -85,12 +85,14 @@ const Footer = () => (
       <a
         style={{ color: "#ffffff", textDecoration: "none" }}
         href="http://seannorton.me/"
+        target="_blank"
       >
         Tengu
       </a>, Created by{" "}
       <a
         style={{ color: "#ffffff", textDecoration: "none" }}
         href="https://camerongreens.com"
+        target="_blank"
       >
         Ecleptic
       </a>

@@ -27,7 +27,7 @@ a {
 
 a:active,
 a:hover {
-  outline-width: 0;
+  // outline-width: 0;
 }
 
 ul {
@@ -101,6 +101,11 @@ h1 {
       }
     }
   }
+  .logoImg {
+    margin: 1rem auto;
+    width: 200px;
+    height: 200px;
+  }
 }
 
 .teamList {
@@ -137,7 +142,7 @@ h1 {
       background: rgba(0, 0, 0, 0.65);
       flex-direction: column;
       margin: 1rem auto;
-      &>* {
+      & > * {
         padding: 0 0.3rem;
       }
       .position {
@@ -147,6 +152,8 @@ h1 {
           font-size: 0.7rem;
           color: #828282;
           font-style: italic;
+          font-family: "ROBOTO", sans-serif; // font-size: 1.3rem;
+          font-weight: 100;
         }
       }
       .name {
@@ -158,8 +165,9 @@ h1 {
         .nameText,
         .numberHash,
         .numberText {
-          font-family: ROBOTO Black, sans-serif; // font-size: 1.3rem;
-          font-size: 2.5rem; //45px/45pt.
+          font-family: "ROBOTO", sans-serif; // font-size: 1.3rem;
+          font-size: 35px; //45px/45pt.
+          font-weight: 900;
         }
       }
       .icons {
@@ -215,7 +223,7 @@ h1 {
 }
 
 .textShadow {
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  // text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 @media only screen and (max-width: 800px) {
@@ -227,7 +235,7 @@ h1 {
     ul {
       .playersListItem {
         width: 320px; // height: 6rem;
-        .name>.nameText {
+        .name > .nameText {
           font-size: 1.3rem;
         }
       }
@@ -268,31 +276,31 @@ h1 {
   text-align: center;
 }
 
-// I still want to get this better
+// TODO: I still want to get this better
 @each $hero in Ana,
-Bastion,
-Dva,
-Genji,
-Hanzo,
-Junkrat,
-Lucio,
-McCree,
-Mei,
-Mercy,
-Orisa,
-Pharah,
-Reaper,
-Reinhardt,
-Roadhog,
-Soldier_76,
-Sombra,
-Symmetra,
-Torbjorn,
-Tracer,
-Widowmaker,
-Winston,
-Zarya,
-Zenyatta {
+  Bastion,
+  Dva,
+  Genji,
+  Hanzo,
+  Junkrat,
+  Lucio,
+  McCree,
+  Mei,
+  Mercy,
+  Orisa,
+  Pharah,
+  Reaper,
+  Reinhardt,
+  Roadhog,
+  Soldier_76,
+  Sombra,
+  Symmetra,
+  Torbjorn,
+  Tracer,
+  Widowmaker,
+  Winston,
+  Zarya,
+  Zenyatta {
   .#{$hero} {
     background: url(./assets/heroes/Spray_#{$hero}_Icon.png);
   }
