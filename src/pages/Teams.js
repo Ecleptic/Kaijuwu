@@ -10,22 +10,19 @@ const Teams = () => (
       <Link to="/Teams/SGZA/">
         <img className="logoImg" src={SGZA_icon} alt="Team Icon" />
         <div className="teamInfo">
-          <h1>KAIJUWU MKG</h1>
-          <p>3.9k Team</p>
+          <h1>KAIJUWU SGZA</h1>
         </div>
       </Link>
       <Link to="/Teams/MUTO/">
         <img className="logoImg" src={MUTO_icon} alt="Team Icon" />
         <div className="teamInfo">
           <h1>KAIJUWU MUTO</h1>
-          <p>3.2k Team</p>
         </div>
       </Link>
       <Link to="/Teams/MKG/">
         <img className="logoImg" src={MKG_icon} alt="Team Icon" />
         <div className="teamInfo">
-          <h1>KAIJUWU SGZA</h1>
-          <p>4.2k Team</p>
+          <h1>KAIJUWU MKG</h1>
         </div>
       </Link>
     </ul>
