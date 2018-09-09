@@ -1,16 +1,34 @@
-// exports.modifyWebpackConfig = (
-//     config,
-//     stage
-// ) => {
-//     const imageLoader = stage !== 'develop'
-//         ? 'file?name=[name]-[hash].[ext]'
-//         : 'file';
+const path = require("path");
+const slash = require("slash");
 
-//     config.removeLoader('images');
-//     config.loader('images', {
-//         test: /\.(jpe?g|png|svg)(\?.*)?$/i,
-//         loader: imageLoader
-//     });
+exports.createPages = ({ graphql, boundActionCreators }) => {
+  const { createPage } = boundActionCreators;
+  return new Promise((resolve, reject) => {
+    const postTemplate = path.resolve(`src/templates/post.js`);
 
-//     return config;
-// };
+    graphql(`
+      {
+        teams {
+          teamName
+          players {
+            playerName
+          }
+        }
+      }
+    `).then(result => {
+      if (result.errors) {
+        console.log(result.errors);
+      }
+      result.data.allPosts.edges.map(({ node }) => {
+        createPage({
+          path: `/post/${node.slug}`,
+          component: slash(postTemplate),
+          context: {
+            slug: node.slug
+          }
+        });
+      });
+      resolve();
+    });
+  });
+};
