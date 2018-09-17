@@ -1,15 +1,16 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from "react"
+import Link from "gatsby-link"
 
 const Teams = ({ data }) => (
-  <div>
-    <h1>Teams</h1>
-    {data.allGetTeam.edges.map(({ node }) => (
-      <Link key={node.id} to={`Teams/${node.teamName}`}>
-        <img src={node.teamIcon.url} />
-        <h2>{node.teamName}</h2>
-      </Link>
-    ))}
+  <div className="teamsPage textShadow">
+    <ul>
+      {data.allGetTeam.edges.map(({ node }) => (
+        <Link key={node.id} to={`Teams/${node.teamName}`}>
+          <img src={node.teamIcon.url} className="logoImg" alt="Team Icon" />
+          <h2>{`KAIJUWU ${node.teamName.toUpperCase()}`}</h2>
+        </Link>
+      ))}
+    </ul>
   </div>
 )
 

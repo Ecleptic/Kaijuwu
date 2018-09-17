@@ -4,8 +4,8 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
-const path = require('path')
-const slash = require('slash')
+const path = require("path")
+const slash = require("slash")
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators
@@ -20,15 +20,19 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
               id
               teamName
               teamRank
-              # teamTitles
+              teamTitles
               teamIcon {
                 url
               }
               players {
+                id
                 playerName
                 playerNumber
                 playerHeroes
                 playerPosition
+                playerTwitch
+                playerTwitter
+                playerYoutube
               }
             }
           }
@@ -43,12 +47,12 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           path: `/Teams/${node.teamName}`,
           component: slash(teamTemplate),
           context: {
-              teamName: node.teamName,
-              teamIcon: node.teamIcon.url,
-              teamRank: node.teamRank,
-              teamTitles: node.teamTitles,
-              players: node.players,
-          },
+            teamName: node.teamName,
+            teamIcon: node.teamIcon.url,
+            teamRank: node.teamRank,
+            teamTitles: node.teamTitles,
+            players: node.players
+          }
         })
       })
       resolve()

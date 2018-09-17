@@ -1,25 +1,24 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from "react"
+import Link from "gatsby-link"
 
-const Header = (props, { siteTitle, data }) => {
-  console.log(props)
+const Header = ({ getAppInfo, siteTitle, data }) => {
   return (
     <div
       style={{
-        marginBottom: '1.45rem',
+        marginBottom: "1.45rem"
       }}
     >
       <div
         className="header textShadow"
         style={{
-          margin: '0 auto',
+          margin: "0 auto",
           maxWidth: 960,
-          padding: '1.45rem 1.0875rem',
+          padding: "1.45rem 1.0875rem"
         }}
       >
         <h4 className="headerIcon" style={{}}>
           <Link to="/">
-            <img className="headerIconImg" src={''} alt="Team Icon" />
+            <img className="headerIconImg" src={getAppInfo.headerImage.url} alt="Team Icon" />
           </Link>
         </h4>
         <div className="headerNavItems">
@@ -30,7 +29,7 @@ const Header = (props, { siteTitle, data }) => {
             About
           </Link>
         </h4> */}
-          <h4 style={{ fontSize: '1.5rem' }}>
+          <h4 style={{ fontSize: "1.5rem" }}>
             <Link to="/Teams">Teams</Link>
           </h4>
         </div>
@@ -42,12 +41,6 @@ const Header = (props, { siteTitle, data }) => {
 export default Header
 
 export const getHeaderImage = graphql`
-  # query getHeaderImage {
-  #   getAppInfo {
-  #     aboutKaijuwu
-  #     ...headerImg
-  #   }
-  # }
   fragment headerImg on getAppInfo {
     headerImage {
       url

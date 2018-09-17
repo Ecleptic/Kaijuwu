@@ -1,10 +1,11 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import getHeroImage from '../helpers/getHeroImage'
+import React from "react"
+import Link from "gatsby-link"
+import Markdown from "react-markdown"
 
-import twitchIcon from '../layouts/assets/icons/twitch.svg'
-import twitterIcon from '../layouts/assets/icons/twitter.svg'
-import youtubeIcon from '../layouts/assets/icons/youtube.svg'
+import getHeroImage from "../helpers/getHeroImage"
+import twitchIcon from "../layouts/assets/icons/twitch.svg"
+import twitterIcon from "../layouts/assets/icons/twitter.svg"
+import youtubeIcon from "../layouts/assets/icons/youtube.svg"
 
 const TeamDetails = ({ pathContext }) => {
   const { players, teamIcon, teamName, teamRank, teamTitles } = pathContext
@@ -15,22 +16,10 @@ const TeamDetails = ({ pathContext }) => {
       <div className="teamInfo">
         <h1>KAIJUWU {teamName}</h1>
         <p>{teamRank}k Team</p>
-        {/* <p>
-          <a target="_blank" href="http://owuls2na.challonge.com/s2d3">
-            OWUL Season 2 Div 3 Winners
-          </a>
-        </p>
-        <p>
-          <a target="_blank" href="http://challonge.com/core_ow">
-            3rd Place CORE OW League Season 0
-          </a>
-        </p>
-        <p>Participated in Haste Overwatch PC Tournament Series</p>
-        <p>Participated in Overwatch Contenders Season Zero</p> */}
+        <Markdown source={teamTitles}/>
       </div>
       <ul>
         {players.map((player, index) => {
-          // console.log(player)
           return (
             <li key={index} className="playersListItem">
               <div className="position">
@@ -98,8 +87,8 @@ const TeamDetails = ({ pathContext }) => {
                           <img
                             width="30"
                             height="30"
-                            className={hero + 'heroImage'}
-                            alt={hero + ' Hero Image'}
+                            className={hero + "heroImage"}
+                            alt={hero + " Hero Image"}
                             src={getHeroImage(hero)}
                           />
                         </li>
@@ -112,9 +101,18 @@ const TeamDetails = ({ pathContext }) => {
           )
         })}
       </ul>
-      <a target="_blank" href="#" className="toTopButton">
+      {/* <a target="_blank" href="#" className="toTopButton">
         <p>Back To Top</p>
-      </a>
+      </a> */}
+      <button
+        className="toTopButton"
+        onClick={() => {
+          document.body.scrollTop = 0 // For Safari
+          document.documentElement.scrollTop = 0 // For Chrome, Firefox, IE and Opera
+        }}
+      >
+        Back To Top
+      </button>
     </div>
   )
 }

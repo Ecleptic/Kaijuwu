@@ -22,9 +22,7 @@ const IndexPage = ({ data }) => (
       About
     </h1>
     <br />
-    <div className="aboutDiv_info">
-      <Markdown source={ data.getAppInfo.aboutKaijuwu } />
-    </div>
+    <Markdown source={data.getAppInfo.aboutKaijuwu} className="aboutDiv_info"/>
   </div>
 )
 

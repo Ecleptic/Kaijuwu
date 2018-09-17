@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `KAIJUWU Heavy Industries`,
+    title: `KAIJUWU Heavy Industries`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,6 +18,7 @@ module.exports = {
           id
           teamName
           teamRank
+          teamTitles
           players {
             id
             playerName
@@ -25,7 +26,7 @@ module.exports = {
             playerHeroes
             playerPosition
             playerTwitch
-            playerTwitch
+            playerTwitter
             playerYoutube
           }
           teamIcon {
@@ -40,9 +41,6 @@ module.exports = {
           ...headerImg
           aboutKaijuwu
         }
-
-
-
         # getTeam:team(where: {teamName:"Muto"}) {
                 #   id
                 # teamName
@@ -66,9 +64,9 @@ module.exports = {
           url
         }
       }
-`,
-      },
+`
+      }
     },
-    `gatsby-plugin-sass`,
-  ],
-}
+    `gatsby-plugin-sass`
+  ]
+};
