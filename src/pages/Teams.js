@@ -1,32 +1,33 @@
-import React from "react";
-import Link from "gatsby-link";
-import SGZA_icon from "./assets/icons/SGZA_ICON.png";
-import MUTO_icon from "./assets/icons/MUTO_ICON.png";
-import MKG_icon from "./assets/icons/MKG_ICON.png";
+import React from "react"
+import Link from "gatsby-link"
 
-const Teams = () => (
+const Teams = ({ data }) => (
   <div className="teamsPage textShadow">
     <ul>
-      <Link to="/Teams/SGZA/">
-        <img className="logoImg" src={SGZA_icon} alt="Team Icon" />
-        <div className="teamInfo">
-          <h1>KAIJUWU SGZA</h1>
-        </div>
-      </Link>
-      <Link to="/Teams/MUTO/">
-        <img className="logoImg" src={MUTO_icon} alt="Team Icon" />
-        <div className="teamInfo">
-          <h1>KAIJUWU MUTO</h1>
-        </div>
-      </Link>
-      <Link to="/Teams/MKG/">
-        <img className="logoImg" src={MKG_icon} alt="Team Icon" />
-        <div className="teamInfo">
-          <h1>KAIJUWU MKG</h1>
-        </div>
-      </Link>
+      {data.allGetTeam.edges.map(({ node }) => (
+        <Link key={node.id} to={`Teams/${node.teamName}`}>
+          <img src={node.teamIcon.url} className="logoImg" alt="Team Icon" />
+          <h2>{`KAIJUWU ${node.teamName.toUpperCase()}`}</h2>
+        </Link>
+      ))}
     </ul>
   </div>
-);
+)
 
-export default Teams;
+export default Teams
+
+export const allTeamsQuery = graphql`
+  query allGetTeam {
+    allGetTeam {
+      edges {
+        node {
+          teamName
+          id
+          teamIcon {
+            url
+          }
+        }
+      }
+    }
+  }
+`

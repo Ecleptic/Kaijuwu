@@ -4,25 +4,69 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sass`,
+    `gatsby-image`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-source-graphcms`,
       options: {
-        name: `data`,
-        path: `${__dirname}/src/data`
+        endpoint: `https://api-uswest.graphcms.com/v1/cjlt0oaf008og01gm51zwqk85/master`,
+        token: `eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ2ZXJzaW9uIjoxLCJ0b2tlbklkIjoiMGY4OWEyODMtNzgyYS00NzI0LWFkNTMtOWFjZDk4NDUyY2Q2In0.pz6DA0RYueZ30bzG2cTw8Lx2KHWVbfxouS0nbk1SCgI`,
+        query: `
+        {
+        getTeams: teams {
+          id
+          teamName
+          teamRank
+          teamTitles
+          players {
+            id
+            playerName
+            playerNumber
+            playerHeroes
+            playerPosition
+            playerTwitch
+            playerTwitter
+            playerYoutube
+          }
+          teamIcon {
+            url
+          }
+        }
+        getAppInfo: appInfoes {
+          id
+          # headerImage {
+          #   url
+          # }
+          ...headerImg
+          aboutKaijuwu
+        }
+        # getTeam:team(where: {teamName:"Muto"}) {
+                #   id
+                # teamName
+                # teamRank
+                # teamIcon{
+                # url
+                # }
+                # teamTitles
+                # players {
+                # id
+                # playerName
+                # playerNumber
+                # playerHeroes
+                # playerPosition
+                # }
+                # }
+                # getPlayersByTeam:player(where )
+      }
+      fragment headerImg on AppInfo{
+        headerImage{
+          url
+        }
+      }
+`
       }
     },
-    `gatsby-transformer-json`,
-    {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [
-          `Roboto\:100i,400,900`,
-          `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
-      ]
-      }
-    }
-  ],
-
-  pathPrefix: `/Kaijuwu`
-}
+    `gatsby-plugin-sass`
+  ]
+};

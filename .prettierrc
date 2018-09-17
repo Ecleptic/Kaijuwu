@@ -1,3 +1,4 @@
 {
-  "proseWrap": true
+  "proseWrap": true,
+  "semi": false
 }

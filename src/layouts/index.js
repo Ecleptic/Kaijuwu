@@ -1,52 +1,13 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Link from "gatsby-link";
-import Helmet from "react-helmet";
-import icon from "../pages/assets/icons/MKG_ICON.png";
-import "./index.scss";
+import React from "react"
+import PropTypes from "prop-types"
+import Helmet from "react-helmet"
 
-const Header = () => (
-  <div
-    style={{
-      marginBottom: "1.45rem"
-    }}
-  >
-    <div
-      className="header textShadow"
-      style={{
-        margin: "0 auto",
-        maxWidth: 960,
-        padding: "1.45rem 1.0875rem"
-      }}
-    >
-      <h4 className="headerIcon" style={{}}>
-        <Link
-          to="/"
-        >
-          <img className="headerIconImg" src={icon} alt="Team Icon" />
-        </Link>
-      </h4>
-      <div className="headerNavItems" >
-        {/* <h4 style={{}}>
-          <Link
-            to="/About/"
-          >
-            About
-          </Link>
-        </h4> */}
-        <h4 style={{fontSize: "1.5rem"}}>
-          <Link
-            to="/Teams/"
-          >
-            Teams
-          </Link>
-        </h4>
-      </div>
-    </div>
-  </div>
-);
+import Header from "../components/Header"
+import Footer from "../components/Footer"
 
-const TemplateWrapper = ({ children }) => (
+import "./index.scss"
+
+const TemplateWrapper = ({ children, data }) => (
   <div>
     <Helmet
       title="KAIJUWU Heavy Industries"
@@ -61,7 +22,7 @@ const TemplateWrapper = ({ children }) => (
         }
       ]}
     />
-    <Header />
+    <Header getAppInfo={data.getAppInfo} />
     <div
       style={{
         margin: "0 auto",
@@ -72,36 +33,25 @@ const TemplateWrapper = ({ children }) => (
         minHeight: "calc(100vh - 170px)"
       }}
     >
-      {children()}
+      <main>{children()}</main>
     </div>
     <Footer />
+    {/* <Header getAppInfo={data.getAppInfo} /> */}
+    {/* <main>{children()}</main> */}
+    {/* <Footer /> */}
   </div>
-);
-
-const Footer = () => (
-  <div className="footer">
-    <p>
-      Designed by{" "}
-      <a
-        style={{ color: "#ffffff", textDecoration: "none" }}
-        href="http://seannorton.me/"
-        target="_blank"
-      >
-        Tengu
-      </a>, Created by{" "}
-      <a
-        style={{ color: "#ffffff", textDecoration: "none" }}
-        href="https://camerongreens.com"
-        target="_blank"
-      >
-        Ecleptic
-      </a>
-    </p>
-  </div>
-);
+)
 
 TemplateWrapper.propTypes = {
   children: PropTypes.func
-};
+}
 
-export default TemplateWrapper;
+export default TemplateWrapper
+
+export const getInfoForHeader = graphql`
+  query getInfoForHeader {
+    getAppInfo {
+      ...headerImg
+    }
+  }
+`
