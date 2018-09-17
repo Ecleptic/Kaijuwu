@@ -275,33 +275,3 @@ h1 {
   font-size: 0.8rem;
   text-align: center;
 }
-
-// TODO: I still want to get this better
-@each $hero in Ana,
-  Bastion,
-  Dva,
-  Genji,
-  Hanzo,
-  Junkrat,
-  Lucio,
-  McCree,
-  Mei,
-  Mercy,
-  Orisa,
-  Pharah,
-  Reaper,
-  Reinhardt,
-  Roadhog,
-  Soldier_76,
-  Sombra,
-  Symmetra,
-  Torbjorn,
-  Tracer,
-  Widowmaker,
-  Winston,
-  Zarya,
-  Zenyatta {
-  .#{$hero} {
-    background: url(./assets/heroes/Spray_#{$hero}_Icon.png);
-  }
-}
