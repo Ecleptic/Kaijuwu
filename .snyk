@@ -1,0 +1,13 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:lodash:20180130':
+    - gatsby > webpack-configurator > lodash:
+        patched: '2018-12-02T03:27:27.105Z'
+  'npm:tunnel-agent:20170305':
+    - gatsby-plugin-sharp > imagemin-webp > cwebp-bin > bin-build > download > caw > tunnel-agent:
+        patched: '2018-12-02T03:27:27.105Z'
+    - gatsby-plugin-sharp > imagemin-webp > cwebp-bin > bin-wrapper > download > caw > tunnel-agent:
+        patched: '2018-12-02T03:27:27.105Z'
