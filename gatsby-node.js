@@ -13,6 +13,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     const teamTemplate = path.resolve(`src/components/teamDetails.js`)
 
     graphql(`
+      # {
       query allGetTeam {
         allGetTeam {
           edges {
@@ -38,6 +39,60 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           }
         }
       }
+      # getTeams: teams {
+      #   id
+      #   teamName
+      #   teamRank
+      #   teamTitles
+      #   players {
+      #     id
+      #     playerName
+      #     playerNumber
+      #     playerHeroes
+      #     playerPosition
+      #     playerTwitch
+      #     playerTwitter
+      #     playerYoutube
+      #   }
+      #   teamIcon {
+      #     url
+      #   }
+      # }
+      # getAppInfo: appInfoes {
+      #   id
+      #   # headerImage {
+      #   #   url
+      #   # }
+      #   ...headerImg
+      #   aboutKaijuwu
+      # }
+      # # getTeam:team(where: {teamName:"Muto"}) {
+      # #   id
+      # # teamName
+      # # teamRank
+      # # teamIcon{
+      # # url
+      # # }
+      # # teamTitles
+      # # players {
+      # # id
+      # # playerName
+      # # playerNumber
+      # # playerHeroes
+      # # playerPosition
+      # # }
+      # # }
+      # # getPlayersByTeam:player(where )
+      # # }
+      # fragment
+      # headerImg
+      # on
+      # AppInfo {
+      #   headerImage {
+      #     url
+      #   }
+      # }
+      # }
     `).then(result => {
       if (result.errors) {
         console.log(result.errors)

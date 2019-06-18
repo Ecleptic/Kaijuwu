@@ -7,10 +7,13 @@ module.exports = {
     `gatsby-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sass`,
     {
-      resolve: `gatsby-source-graphcms`,
+      resolve: `gatsby-source-graphql`,
       options: {
-        endpoint: `https://api-uswest.graphcms.com/v1/cjlt0oaf008og01gm51zwqk85/master`,
+        url: `https://api-uswest.graphcms.com/v1/cjlt0oaf008og01gm51zwqk85/master`,
+        typeName: "GCMS",
+        fieldName: "gcms",
         token: `eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ2ZXJzaW9uIjoxLCJ0b2tlbklkIjoiMGY4OWEyODMtNzgyYS00NzI0LWFkNTMtOWFjZDk4NDUyY2Q2In0.pz6DA0RYueZ30bzG2cTw8Lx2KHWVbfxouS0nbk1SCgI`,
         query: `
         {
@@ -66,7 +69,6 @@ module.exports = {
       }
 `
       }
-    },
-    `gatsby-plugin-sass`
+    }
   ]
-};
+}
