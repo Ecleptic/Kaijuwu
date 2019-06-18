@@ -1,5 +1,5 @@
 import React from "react"
-import Link from "gatsby-link"
+import { Link } from "gatsby"
 import Markdown from "react-markdown"
 
 import getHeroImage from "../helpers/getHeroImage"
@@ -16,7 +16,7 @@ const TeamDetails = ({ pathContext }) => {
       <div className="teamInfo">
         <h1>KAIJUWU {teamName}</h1>
         <p>{teamRank}k Team</p>
-        <Markdown source={teamTitles}/>
+        <Markdown source={teamTitles} />
       </div>
       <ul>
         {players.map((player, index) => {

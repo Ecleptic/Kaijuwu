@@ -1,5 +1,5 @@
 import React from "react"
-import Link from "gatsby-link"
+import { Link } from "gatsby"
 
 const Header = ({ getAppInfo, siteTitle, data }) => {
   return (
@@ -18,7 +18,11 @@ const Header = ({ getAppInfo, siteTitle, data }) => {
       >
         <h4 className="headerIcon" style={{}}>
           <Link to="/">
-            <img className="headerIconImg" src={getAppInfo.headerImage.url} alt="Team Icon" />
+            <img
+              className="headerIconImg"
+              src={getAppInfo.headerImage.url}
+              alt="Team Icon"
+            />
           </Link>
         </h4>
         <div className="headerNavItems">
