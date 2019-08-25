@@ -1,20 +1,20 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react"
+import PropTypes from "prop-types"
 
 const Footer = () => (
   <div className="footer">
     <p>
-      Designed by{' '}
+      Designed by{" "}
       <a
-        style={{ color: '#ffffff', textDecoration: 'none' }}
+        style={{ color: "#ffffff", textDecoration: "none" }}
         href="http://seannorton.me/"
         target="_blank"
       >
         Tengu
       </a>
-      , Created by{' '}
+      , Created by{" "}
       <a
-        style={{ color: '#ffffff', textDecoration: 'none' }}
+        style={{ color: "#ffffff", textDecoration: "none" }}
         href="https://camerongreens.com"
         target="_blank"
       >
