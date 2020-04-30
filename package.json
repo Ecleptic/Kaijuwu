@@ -19,7 +19,8 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1",
-    "react-markdown": "^4.1.0"
+    "react-markdown": "^4.1.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.2",
@@ -44,6 +45,9 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
-  }
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \"",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
